@@ -1,4 +1,4 @@
-package com.ibm.jp.sample.todo.todo;
+package com.ibm.jp.sample.todo.entity;
 
 import java.io.Serializable;
 
