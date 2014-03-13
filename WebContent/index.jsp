@@ -20,7 +20,7 @@
 				<th>Detail</th>
 				<th>Operation</th>
 			</tr>
-			<c:forEach var="todo" items="#{todos.list}">
+			<c:forEach var="todo" items="#{todolist}">
 			<tr>
 				<td>${todo.title}</td>
 				<td>${todo.detail}</td>

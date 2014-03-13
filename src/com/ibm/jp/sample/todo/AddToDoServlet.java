@@ -33,7 +33,7 @@ public class AddToDoServlet extends HttpServlet {
 		String detail = request.getParameter("detail");
 		
 		ToDoEntry newToDo = new ToDoEntry(id, title, detail);
-		toDoList.addSchedule(newToDo);
+		toDoList.add(newToDo);
 
 		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 		rd.forward(request, response);
