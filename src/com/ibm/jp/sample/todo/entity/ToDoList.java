@@ -3,10 +3,10 @@ package com.ibm.jp.sample.todo.entity;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 
-@ApplicationScoped
+@SessionScoped
 @Named("todolist")
 public class ToDoList extends ArrayList<ToDoEntry> {
 
