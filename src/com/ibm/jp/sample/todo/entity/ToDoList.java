@@ -16,8 +16,7 @@ public class ToDoList extends ArrayList<ToDoEntry> {
 	public void removeSchedule(String id) {
 		Iterator<ToDoEntry>it = this.iterator();
 		while (it.hasNext()) {
-			ToDoEntry entry = it.next();
-			if (entry.getId().equals(id)) {
+			if (it.next().getId().equals(id)) {
 				it.remove();
 			}
 		}
