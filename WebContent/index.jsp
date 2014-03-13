@@ -22,8 +22,8 @@
 			</tr>
 			<c:forEach var="todo" items="#{todolist}">
 			<tr>
-				<td>${todo.title}</td>
-				<td>${todo.detail}</td>
+				<td><c:out value="${todo.title}" escapeXml="true" /></td>
+				<td><c:out value="${todo.detail}" escapeXml="true" /></td>
 				<td>
 					<form method="POST" action="RemoveEntry">
 						<input type="hidden" name="id" value="${todo.id}" />
