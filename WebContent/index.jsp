@@ -4,10 +4,10 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>ToDo List</title>
+	<title><c:out value="<%= request.getRemoteUser() %>" escapeXml="true" />'s ToDo List</title>
 </head>
 <body>
-	<h1>ToDo List</h1>
+	<h1><c:out value="<%= request.getRemoteUser() %>" escapeXml="true" />'s ToDo List</h1>
 	<form method="POST" action="AddEntry">
 		<label>Title</label><input type="text" name="title" size="10" />
 		<label>Detail</label><input type="text" name="detail" size="20" />
