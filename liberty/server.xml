@@ -1,0 +1,32 @@
+<server description="new server">
+	<featureManager>
+		<feature>jsp-2.2</feature>
+		<feature>cdi-1.0</feature>
+		<feature>appSecurity-1.0</feature>
+		<feature>ssl-1.0</feature>
+		<feature>localConnector-1.0</feature>
+	</featureManager>
+
+	<httpEndpoint host="localhost" httpPort="9080" httpsPort="9443"
+		id="defaultHttpEndpoint">
+	</httpEndpoint>
+	<ssl keyStoreRef="defaultKey" id="defaultSSLConfig" />
+	<keyStore password="password" id="defaultKey" />
+
+	<basicRegistry>
+		<user password="password" name="Tom" />
+		<user name="Bob" password="password" />
+		<group name="Users">
+			<member name="Tom" />
+			<member name="Bob" />
+		</group>
+	</basicRegistry>
+
+	<application id="ToDoWeb" location="ToDoWeb.war" name="ToDoWeb">
+		<application-bnd>
+			<security-role name="USER">
+				<group name="Users" />
+			</security-role>
+		</application-bnd>
+	</application>
+</server>
