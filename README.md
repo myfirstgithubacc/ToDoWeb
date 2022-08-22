@@ -1,3 +1,3 @@
 # ToDoWeb
 
-Sample Java sample
+Sample Java.
