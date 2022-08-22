@@ -1,3 +1,3 @@
 # ToDoWeb
 
-Sample Java EE Project
+Sample Java Project
